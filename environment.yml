@@ -1,0 +1,25 @@
+name: mksense
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12.1
+  - pip
+  - typer
+  - loguru
+  - tqdm
+  - ipython
+  - jupyterlab
+  - matplotlib
+  - notebook
+  - numpy
+  - pandas
+  - scikit-learn
+  - ruff
+  - pytest
+  - pip:
+    - python-dotenv
+    - mkdocs
+    - elasticsearch==9.1.0
+    - openai
+    - qdrant-client[fastembed]>=1.14.2
+    - -e .
