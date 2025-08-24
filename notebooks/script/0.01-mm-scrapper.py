@@ -46,13 +46,6 @@ def get_user_and_repo(github_link):
     return path_parts[0], path_parts[1]
 
 
-
-# Example usage
-github_link = "https://github.com/scikit-learn/scikit-learn"
-user, repo = get_user_and_repo(github_link)
-logger.info(f"Extracted repository: user='{user}', repo='{repo}'")
-
-
 def get_doc_folder_name(user: str, repo: str) -> str:
     """
     Checks which of the common documentation folders exists in the GitHub repo.
@@ -85,10 +78,6 @@ def get_doc_folder_name(user: str, repo: str) -> str:
     return None
 
 
-folder_name = get_doc_folder_name(user, repo)
-
-
-folder_name
 
 
 def get_docs_folder(user: str, repo: str, folder_path: str, save_path: Path):
@@ -138,6 +127,16 @@ def get_docs_folder(user: str, repo: str, folder_path: str, save_path: Path):
             logger.info(f"📁 Entering directory: {item['path']}")
             get_docs_folder(user, repo, item["path"], item_path)
 
+
+
+# Example usage
+github_link = "https://github.com/pytorch/pytorch"
+user, repo = get_user_and_repo(github_link)
+logger.info(f"Extracted repository: user='{user}', repo='{repo}'")
+
+
+folder_name = get_doc_folder_name(user, repo)
+folder_name
 
 
 # Define save path
