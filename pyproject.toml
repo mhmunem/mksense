@@ -5,7 +5,7 @@ build-backend = "flit_core.buildapi"
 [project]
 name = "mksense"
 version = "0.0.1"
-description = "This project builds a customisation Retrieval-Augmented Generation (RAG) system for Python libraries like TensorFlow. Users can index documentation and codebases to enable natural language querying via LLMs.Easily extendable to any library, making technical exploration faster and more intuitive. This is a capstone project for llm-zoomcamp."
+description = "This project builds a customised Retrieval-Augmented Generation (RAG) system for Python libraries like sklearn. Users can index documentation and codebases to enable natural language querying via LLMs.Easily extendable to any library, making technical exploration faster and more intuitive. This is a capstone project for llm-zoomcamp."
 authors = [
   { name = "Mohammad Munem" },
 ]

@@ -4,58 +4,43 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-This project builds a customisation Retrieval-Augmented Generation (RAG) system for Python libraries like TensorFlow. Users can index documentation and codebases to enable natural language querying via LLMs.Easily extendable to any library, making technical exploration faster and more intuitive. This is a capstone project for llm-zoomcamp.
+## 🚧 Problem Statement
 
-## Project Organization
+Python libraries like **scikit-learn** and **PyTorch** offer rich documentation—but navigating them to find specific parameters or usage details can be frustrating 😩. 
+While LLMs can help, they often provide **generic** or **outdated** answers. 
+And when working with **proprietary software**, LLMs may not have access to the relevant documentation at all 🔒.
 
-```
-├── LICENSE            <- Open-source license if one is chosen
-├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
-├── README.md          <- The top-level README for developers using this project.
-├── data
-│   ├── external       <- Data from third party sources.
-│   ├── interim        <- Intermediate data that has been transformed.
-│   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
-│
-├── models             <- Trained and serialized models, model predictions, or model summaries
-│
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
-│
-├── pyproject.toml     <- Project configuration file with package metadata for 
-│                         mksense and configuration for tools like black
-│
-├── references         <- Data dictionaries, manuals, and all other explanatory materials.
-│
-├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-│   └── figures        <- Generated graphics and figures to be used in reporting
-│
-├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-│                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
-│
-└── mksense   <- Source code for use in this project.
-    │
-    ├── __init__.py             <- Makes mksense a Python module
-    │
-    ├── config.py               <- Store useful variables and configuration
-    │
-    ├── dataset.py              <- Scripts to download or generate data
-    │
-    ├── features.py             <- Code to create features for modeling
-    │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
-    │
-    └── plots.py                <- Code to create visualizations
-```
+This project solves that by building a **customizable Retrieval-Augmented Generation (RAG) system** 🧠📚. 
+Users can upload documentation to create a searchable knowledge base. 
+This enables **context-aware, up-to-date answers** via natural language queries—without needing to expose proprietary code.
+This is a capstone project for [llm-zoomcamp 2025](https://github.com/DataTalksClub/llm-zoomcamp).
 
---------
+Whether you're exploring a new library or diving deep into a niche feature, this tool makes technical exploration **faster**, **smarter**, and **more intuitive** 🚀.
+
+---
+
+**✨ Features** – Highlight what makes your RAG system unique (e.g., plug-and-play for any library, fast indexing, easy querying).
+
+---
+
+**🚀 Installation & Setup** – Provide clear steps to get started.
+
+--- 
+
+**🧪 Example Use Cases** – Show how it works with scikit-learn or PyTorch.
+
+---
+
+- **📁 Project Structure** – Help contributors understand the layout.
+
+---
+
+- **🛠️ Contributing** – Invite others to improve or extend the project.
+
+--- 
+
+- **📜 License** – Clarify usage rights.
+
+---
+
 

@@ -58,7 +58,17 @@ create_environment:
 activate:
 	conda activate $(PROJECT_NAME)
 
+## Loads the environment variables
+.PHONY: load_env
+load_env:
+	$(PYTHON_INTERPRETER) mksense/scripts.py
 
+
+
+## Exports ipython jupyter notebooks
+.PHONY: export_notebooks
+export_notebooks:
+	nbautoexport export notebooks/
 
 #################################################################################
 # PROJECT RULES                                                                 #
