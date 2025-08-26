@@ -19,7 +19,7 @@ logger.add(sys.stdout, level="INFO")
 logger.add("cleaning.log", level="DEBUG", rotation="10 MB")
 
 
-from mksense.config import RAW_DATA_DIR, INTERIM_DATA_DIR
+from mksense.config import RAW_DATA_DIR, PROCESSED_DATA_DIR
 
 
 def clean_rst_syntax(text: str) -> str:
@@ -159,27 +159,21 @@ def clean_json(
             "file_path": file_path,
             "title": title,
             "context": context,
-            "extension": extension
+            "extension": extension,
+            "repo":repo
         })
-
-    # === Restructure to desired format ===
-    result = {
-        "repo": repo,
-        "documents": cleaned_docs
-    }
 
     # Save output
     output_json.parent.mkdir(parents=True, exist_ok=True)
     with open(output_json, "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
+        json.dump(cleaned_docs, f, indent=2, ensure_ascii=False)
 
     logger.success(f"✅ Cleaned {len(cleaned_docs)} documents saved to {output_json}")
-    logger.info(f"📄 Output structure: {{'repo': 'scikit-learn', 'documents': [...] }}")
 
 
 repo = "pytorch"
 input_file = RAW_DATA_DIR / repo / f"{repo}_docs.json"   # Update path as needed
-output_file = INTERIM_DATA_DIR / repo / f"{repo}_docs_cleaned.json"
+output_file = PROCESSED_DATA_DIR / repo / f"{repo}_docs_cleaned.json"
 clean_json(input_file, output_file)
 
 

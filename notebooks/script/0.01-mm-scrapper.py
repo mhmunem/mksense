@@ -130,7 +130,7 @@ def get_docs_folder(user: str, repo: str, folder_path: str, save_path: Path):
 
 
 # Example usage
-github_link = "https://github.com/pytorch/pytorch"
+github_link = "https://github.com/scikit-learn/scikit-learn"
 user, repo = get_user_and_repo(github_link)
 logger.info(f"Extracted repository: user='{user}', repo='{repo}'")
 

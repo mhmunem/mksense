@@ -155,7 +155,7 @@ def parse_docs_to_json_with_titles(
 
 repo = "pytorch"
 downloaded_dir = EXTERNAL_DATA_DIR / repo
-output_file = RAW_DATA_DIR / f"{repo}_docs.json"
+output_file = RAW_DATA_DIR / repo / f"{repo}_docs.json"
 
 parse_docs_to_json_with_titles(
     root_dir=downloaded_dir,
