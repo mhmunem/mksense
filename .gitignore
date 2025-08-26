@@ -196,3 +196,4 @@ cython_debug/
 rst_docs/
 oryx-build-commands.txt
 qdrant_storage
+elasticsearch

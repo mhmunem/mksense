@@ -5,7 +5,7 @@
 # 3. https://youtu.be/2KzDMD5Qk2k?si=XbJMPPDWvGgWnmVU
 # 4. https://youtu.be/SHk0oLxEpu4?si=5wYRkWX7bYTuxfA3
 
-
+FROM python:3.12.11
 
 
 
