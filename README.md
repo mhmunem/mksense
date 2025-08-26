@@ -31,15 +31,15 @@ Whether you're exploring a new library or diving deep into a niche feature, this
 
 ---
 
-- **📁 Project Structure** – Help contributors understand the layout.
+**📁 Project Structure** – Help contributors understand the layout.
 
 ---
 
-- **🛠️ Contributing** – Invite others to improve or extend the project.
+**🛠️ Contributing** – Invite others to improve or extend the project.
 
 --- 
 
-- **📜 License** – Clarify usage rights.
+**📜 License** – Clarify usage rights.
 
 ---
 
