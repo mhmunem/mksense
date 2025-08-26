@@ -23,7 +23,6 @@ dependencies:
     - openai
     - qdrant-client[fastembed]>=1.14.2
     - nbautoexport
-    - beautifull
     - requests
     - beautifulsoup4
     - -e .

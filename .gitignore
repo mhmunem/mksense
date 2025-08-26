@@ -194,3 +194,5 @@ cython_debug/
 /.old/
 /.course/
 rst_docs/
+oryx-build-commands.txt
+qdrant_storage

@@ -22,6 +22,19 @@ requires-python = "==3.12.1"
 line-length = 99
 src = ["mksense"]
 include = ["pyproject.toml", "mksense/**/*.py"]
+exclude = [
+  "**/__pycache__",
+  "**/.pytest_cache",
+  "**/.venv",
+  "**/venv",
+  "**/htmlcov",
+  "**/alembic/versions",
+  "**/node_modules",
+  "**/*env/*",
+  "**/.git",
+  "**/*.yaml",
+  "**/*.yml",
+]
 
 [tool.ruff.lint]
 extend-select = ["I"]  # Add import sorting
